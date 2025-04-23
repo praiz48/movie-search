@@ -38,6 +38,9 @@ function App() {
         setNotFound(false);
       } catch (error) {
         console.error("Error fetching movies:", error);
+        alert("problem encountered");
+        setNotFound(true);
+        setMovies([]);
       } finally {
         setLoading(false);
       }
