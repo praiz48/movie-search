@@ -9,7 +9,7 @@ const MovieDetail = ({ movie_id }) => {
     const fetchMovieDetails = async () => {
       try {
         const response = await fetch(
-          `http://www.omdbapi.com/?i=${movie_id}&apikey=ab2c820e`
+          `https://www.omdbapi.com/?i=${movie_id}&apikey=ab2c820e`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch movie details");
